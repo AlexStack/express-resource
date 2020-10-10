@@ -219,10 +219,10 @@ Resource.prototype.mapDefaultAction = function(key, fn){
     case 'index':
       this.get('/', fn);
       break;
-    case 'new':
-      this.get('/new', fn);
-      break;
     case 'create':
+      this.get('/create', fn);
+      break;      
+    case 'store':
       this.post('/', fn);
       break;
     case 'show':
@@ -238,7 +238,7 @@ Resource.prototype.mapDefaultAction = function(key, fn){
       this.patch(fn);
       break;
     case 'destroy':
-      this.del(fn);
+      this.delete(fn);
       break;
   }
 };
