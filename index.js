@@ -23,8 +23,8 @@ var express = require('express')
 
 var orderedActions = [
    'index'    //  GET   /
-  , 'new'     //  GET   /new
-  , 'create'  //  POST  /
+  , 'create'     //  GET   /create
+  , 'store'  //  POST  /
   , 'show'    //  GET   /:id
   , 'edit'    //  GET   /edit/:id
   , 'update'  //  PUT   /:id
